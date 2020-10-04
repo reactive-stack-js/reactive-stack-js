@@ -2,10 +2,10 @@
   <img alt="reactive-stack-js" src="https://avatars0.githubusercontent.com/u/72337471?s=75" width="75">
 </a>
 
-# Reactive Stack
+# Reactive Stack JS
 [![codacy](https://img.shields.io/codacy/grade/4c600ced52d34f98ab093ee6d51e1c70.svg)](https://www.codacy.com/project/cope/reactive-stack/dashboard)
 
-Reactive Stack - [the plan](https://docs.google.com/document/d/19zDe5Ee3U8-Q_3z7_SQ7xuOmcqVtCfU2Of8-Slk2nxQ)
+Reactive Stack JS - [the plan](https://docs.google.com/document/d/19zDe5Ee3U8-Q_3z7_SQ7xuOmcqVtCfU2Of8-Slk2nxQ)
 
 __IMPORTANT__: All implementations use the __one and the same__ database!<br/>
 The idea is that if you make a change in one, all others should _magically_ update.
@@ -13,17 +13,17 @@ The idea is that if you make a change in one, all others should _magically_ upda
 ### Content
 
 1. :heavy_check_mark: Using Meteor with React
-    1. :heavy_check_mark: __meteor-react__ (_based on [Meteor React tutorial](https://www.meteor.com/tutorials/react/creating-an-app)_)
-2. :heavy_check_mark: Using Meteor with Svelte
-    1. :heavy_check_mark: __meteor-svelte__ (_based on [Meteor Svelte tutorial](https://www.meteor.com/tutorials/svelte/creating-an-app)_)
+    1. :heavy_check_mark: __reactive-stack-js-meteor-react__ (_based on [Meteor React tutorial](https://www.meteor.com/tutorials/react/creating-an-app)_)
+2. :x: Using Meteor with Svelte
+    1. :x: __reactive-stack-js-meteor-svelte__ (_based on [Meteor Svelte tutorial](https://www.meteor.com/tutorials/svelte/creating-an-app)_)
 3. :heavy_check_mark: Using own implementation
-    1. :heavy_check_mark: __backend-fastify__ (_fastify backend, works with both frontends below_)
-    2. :heavy_check_mark: __frontend-react__ (_react frontend for any backend_)
-    3. :heavy_check_mark: __frontend-svelte__ (_svelte frontend for any backend_)
-    3. :heavy_check_mark: __frontend-vue__ (_vue frontend for any backend_)
-4. :x: :construction: Using GraphQL
-    1. :x: :construction: __graphql-backend-fastify__ (_graphql-fastify backend, works with both frontends below_)
-    2. :x: :construction: __graphql-frontend-vue__ (_graphql-vue frontend for any backend_)
+    1. :heavy_check_mark: __reactive-stack-js-rest-backend-fastify__ (_fastify backend, works with any rest frontends below_)
+    2. :heavy_check_mark: __reactive-stack-js-rest-frontend-react__ (_react frontend for any rest backend_)
+    3. :heavy_check_mark: __reactive-stack-js-rest-frontend-svelte__ (_svelte frontend for any rest backend_)
+    3. :heavy_check_mark: __reactive-stack-js-rest-frontend-vue__ (_vue frontend for any rest backend_)
+4. :heavy_check_mark: :construction: Using GraphQL
+    1. :heavy_check_mark: :construction: __reactive-stack-js-graphql-backend-fastify__ (_graphql-fastify backend, works with any graphql-frontend_)
+    2. :heavy_check_mark: :construction: __reactive-stack-js-graphql-frontend-vue__ (_graphql-vue frontend for any graphql-backend_)
 
 ### Requirements for 1-3
 
@@ -35,47 +35,39 @@ The idea is that if you make a change in one, all others should _magically_ upda
 ### Startup
 :heavy_check_mark: Run &nbsp;`npm install`&nbsp; and then &nbsp;`npm run data`&nbsp; in the root folder, to create the dataset.
 
-1. :heavy_check_mark: meteor-react:
-    * go into `./a-meteor/1-meteor-react/` folder
+1. :heavy_check_mark: reactive-stack-js-meteor-react:
     * run &nbsp;`meteor npm install`&nbsp;
     * run &nbsp;`npm start`&nbsp;   (_alternatively, you can run_ &nbsp;`meteor run --port 3001`&nbsp;)
     * open http://localhost:3001/
-2. :heavy_check_mark: meteor-svelte:
-    * go into `./a-meteor/2-meteor-svelte/` folder
+2. :heavy_check_mark: reactive-stack-js-meteor-svelte:
     * run &nbsp;`meteor npm install`&nbsp;
     * run &nbsp;`npm start`&nbsp;   (_alternatively, you can run_ &nbsp;`meteor run --port 3002`&nbsp;)
     * open http://localhost:3002/
-3. :heavy_check_mark: backend-fastify:
-    * go into `./b-plain/3-backend-fastify/` folder
+3. :heavy_check_mark: reactive-stack-js-rest-backend-fastify:
     * run &nbsp;`npm install`&nbsp;
     * run &nbsp;`npm start`&nbsp;
     * open http://localhost:3003/
-4. :heavy_check_mark: frontend-react:
-    * __IMPORTANT__: make sure backend-fastify is started
-    * go into `./b-plain/4-frontend-react/` folder
+4. :heavy_check_mark: reactive-stack-js-rest-frontend-react:
+    * __IMPORTANT__: make sure rest-backend-fastify is started
     * run &nbsp;`npm install`&nbsp;
     * run &nbsp;`npm start`&nbsp;
     * open http://localhost:3004/
-5. :heavy_check_mark: frontend-svelte:
-    * __IMPORTANT__: make sure backend-fastify is started
-    * go into `./b-plain/5-frontend-svelte/` folder
+5. :heavy_check_mark: reactive-stack-js-rest-frontend-svelte:
+    * __IMPORTANT__: make sure rest-backend-fastify is started
     * run &nbsp;`npm install`&nbsp;
     * run &nbsp;`npm dev`&nbsp;
     * open http://localhost:3005/
-6. :heavy_check_mark: frontend-vue:
-    * __IMPORTANT__: make sure backend-fastify is started
-    * go into `./b-plain/6-frontend-vue/` folder
+6. :heavy_check_mark: reactive-stack-js-rest-frontend-vue:
+    * __IMPORTANT__: make sure rest-backend-fastify is started
     * run &nbsp;`npm install`&nbsp;
     * run &nbsp;`npm start`&nbsp;
     * open http://localhost:3006/
-7. :x: :construction: graphql/backend-fastify:
-    * go into `./c-graphql/backend-fastify/` folder
+7. :heavy_check_mark: :construction: reactive-stack-js-graphql-backend-fastify:
     * run &nbsp;`npm install`&nbsp;
     * run &nbsp;`npm start`&nbsp;
     * open http://localhost:3007/
-8. :x: :construction: graphql/frontend-vue:
-    * __IMPORTANT__: make sure backend-fastify is started
-    * go into `./c-graphql/frontend-vue/` folder
+8. :heavy_check_mark: :construction: reactive-stack-js-graphql-frontend-vue:
+    * __IMPORTANT__: make sure graphql-backend-fastify is started
     * run &nbsp;`npm install`&nbsp;
     * run &nbsp;`npm start`&nbsp;
     * open http://localhost:3008/
