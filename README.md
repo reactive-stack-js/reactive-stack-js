@@ -122,7 +122,6 @@ _Reset data every hour for any deployed demo_<br/>&nbsp;
 	3. Save and close saves the draft and goes back to listing
 	4. Submit saves the draft as a new iteration with isDraft=false
 
-
 ## TODO
 
 fastest-validator
