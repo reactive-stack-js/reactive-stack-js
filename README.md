@@ -3,7 +3,7 @@
 </a>
 
 # Reactive Stack JS
-[![codacy](https://img.shields.io/codacy/grade/4c600ced52d34f98ab093ee6d51e1c70.svg)](https://www.codacy.com/project/cope/reactive-stack/dashboard)
+[![codacy](https://img.shields.io/codacy/grade/e0146e29a3134038b4dcf95db9eb5a38.svg)](https://app.codacy.com/gh/reactive-stack-js/reactive-stack-js/dashboard)
 
 Reactive Stack JS - [the plan](https://docs.google.com/document/d/19zDe5Ee3U8-Q_3z7_SQ7xuOmcqVtCfU2Of8-Slk2nxQ)
 
