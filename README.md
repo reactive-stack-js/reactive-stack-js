@@ -1,5 +1,5 @@
-<a href="http://stojadinovic.net">
-  <img alt="stojadinovic.net" src="https://avatars0.githubusercontent.com/u/112515?s=75" width="75">
+<a href="https://reactive-stack-js.github.io/reactive-stack-js/">
+  <img alt="reactive-stack-js" src="https://avatars0.githubusercontent.com/u/72337471?s=75" width="75">
 </a>
 
 # Reactive Stack
