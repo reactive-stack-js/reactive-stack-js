@@ -24,14 +24,12 @@ There are 3 sections which are further split into repositories.
             _based on_ [_Meteor React tutorial_](https://www.meteor.com/tutorials/react/creating-an-app)
     2.  Meteor with Svelte
         1.  :x: :construction: [reactive-stack-js-meteor-svelte](https://github.com/reactive-stack-js/reactive-stack-js-meteor-svelte)  
-            _based on_ [_Meteor Svelte tutorial_](https://www.meteor.com/tutorials/svelte/creating-an-app)  
-             
+            _based on_ [_Meteor Svelte tutorial_](https://www.meteor.com/tutorials/svelte/creating-an-app)
 2.  **Reactive Stack JS using** [**REST**](https://restfulapi.net/)
     1.  :construction: [reactive-stack-js-rest-backend-fastify](https://github.com/reactive-stack-js/reactive-stack-js-rest-backend-fastify)
     2.  :construction: [reactive-stack-js-rest-frontend-react](https://github.com/reactive-stack-js/reactive-stack-js-rest-frontend-react)
     3.  :construction: [reactive-stack-js-rest-frontend-svelte](https://github.com/reactive-stack-js/reactive-stack-js-rest-frontend-svelte)
-    4.  :construction: [reactive-stack-js-rest-frontend-vue](https://github.com/reactive-stack-js/reactive-stack-js-rest-frontend-vue)  
-         
+    4.  :construction: [reactive-stack-js-rest-frontend-vue](https://github.com/reactive-stack-js/reactive-stack-js-rest-frontend-vue)
 3.  **Reactive Stack JS using** [**GraphQL**](https://graphql.org/)
     1.  :heavy\_check\_mark: [reactive-stack-js-graphql-backend-fastify](https://github.com/reactive-stack-js/reactive-stack-js-graphql-backend-fastify)
     2.  :heavy\_check\_mark: [reactive-stack-js-graphql-frontend-vue](https://github.com/reactive-stack-js/reactive-stack-js-graphql-frontend-vue)
@@ -60,3 +58,15 @@ _I do not plan to repeat react or svelte here, since that would serve no valuabl
 ### App Description
 
 WIP: [App Description](https://github.com/reactive-stack-js/reactive-stack-js/wiki/App-Description)
+
+# Reactive Stack JS using MeteorJS
+
+todo...
+
+# Reactive Stack JS using REST
+
+todo...
+
+# Reactive Stack JS using GraphQL
+
+todo...
