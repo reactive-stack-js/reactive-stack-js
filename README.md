@@ -1,127 +1,62 @@
-<a href="https://reactive-stack-js.github.io/reactive-stack-js/">
-  <img alt="reactive-stack-js" src="https://avatars0.githubusercontent.com/u/72337471?s=75" width="75">
-</a>
+![reactive-stack-js](https://avatars0.githubusercontent.com/u/72337471?s=75)
 
 # Reactive Stack JS
-[![codacy](https://img.shields.io/codacy/grade/e0146e29a3134038b4dcf95db9eb5a38.svg)](https://app.codacy.com/gh/reactive-stack-js/reactive-stack-js/dashboard)
 
-Reactive Stack JS - [the plan](https://github.com/reactive-stack-js/reactive-stack-js/wiki)
+![codacy](https://img.shields.io/codacy/grade/e0146e29a3134038b4dcf95db9eb5a38.svg)
 
-__IMPORTANT__: All implementations use the __one and the same__ database!<br/>
-The idea is that if you make a change in one, all others should _magically_ update.
+In **reactive** programming, data is pushed, not pulled. Therefore, a reactive stack is, logically, one where data is pushed, not pulled.
 
-### Content
+What that means is that instead of the client _requesting_ the data from the server, the server is _pushing_ the data to the client.
 
-1. :heavy_check_mark: Using Meteor with React
-	1. :heavy_check_mark: __reactive-stack-js-meteor-react__ (_based on [Meteor React tutorial](https://www.meteor.com/tutorials/react/creating-an-app)_)
-2. :x: Using Meteor with Svelte
-	1. :x: __reactive-stack-js-meteor-svelte__ (_based on [Meteor Svelte tutorial](https://www.meteor.com/tutorials/svelte/creating-an-app)_)
-3. :heavy_check_mark: Using own implementation
-	1. :heavy_check_mark: __reactive-stack-js-rest-backend-fastify__ (_fastify backend, works with any rest frontends below_)
-	2. :heavy_check_mark: __reactive-stack-js-rest-frontend-react__ (_react frontend for any rest backend_)
-	3. :heavy_check_mark: __reactive-stack-js-rest-frontend-svelte__ (_svelte frontend for any rest backend_)
-	3. :heavy_check_mark: __reactive-stack-js-rest-frontend-vue__ (_vue frontend for any rest backend_)
-4. :heavy_check_mark: :construction: Using GraphQL
-	1. :heavy_check_mark: :construction: __reactive-stack-js-graphql-backend-fastify__ (_graphql-fastify backend, works with any graphql-frontend_)
-	2. :heavy_check_mark: :construction: __reactive-stack-js-graphql-frontend-vue__ (_graphql-vue frontend for any graphql-backend_)
+Basically, this boils down to a simple description: the client is **observing** the data, and **reacting** to its changes.
 
-### Requirements for 1-3
+## Description
 
-* Meteor (_[install](https://www.meteor.com/install)_)
-* MongoDB (_[install](https://docs.mongodb.com/manual/installation/#mongodb-community-edition-installation-tutorials)_)
-	* local as a cluster (_see [MongoDB: Convert a Standalone to a Replica Set](https://docs.mongodb.com/manual/tutorial/convert-standalone-to-replica-set/)_)
-	* with featureCompatibilityVersion = "3.6" (_see [setFeatureCompatibilityVersion](https://docs.mongodb.com/manual/reference/command/setFeatureCompatibilityVersion/)_)
+This repository contains the description and links to various sub-repositories I created as a reactive stack [POC](https://en.wikipedia.org/wiki/Proof_of_concept).
 
-### Startup
-:heavy_check_mark: Run &nbsp;`npm install`&nbsp; and then &nbsp;`npm run data`&nbsp; in the root folder, to create the dataset.
+There are 3 sections which are further split into repositories.
 
-1. :heavy_check_mark: reactive-stack-js-meteor-react:
-	* run &nbsp;`meteor npm install`&nbsp;
-	* run &nbsp;`npm start`&nbsp;   (_alternatively, you can run_ &nbsp;`meteor run --port 3001`&nbsp;)
-	* open http://localhost:3001/
-2. :heavy_check_mark: reactive-stack-js-meteor-svelte:
-	* run &nbsp;`meteor npm install`&nbsp;
-	* run &nbsp;`npm start`&nbsp;   (_alternatively, you can run_ &nbsp;`meteor run --port 3002`&nbsp;)
-	* open http://localhost:3002/
-3. :heavy_check_mark: reactive-stack-js-rest-backend-fastify:
-	* run &nbsp;`npm install`&nbsp;
-	* run &nbsp;`npm start`&nbsp;
-	* open http://localhost:3003/
-4. :heavy_check_mark: reactive-stack-js-rest-frontend-react:
-	* __IMPORTANT__: make sure rest-backend-fastify is started
-	* run &nbsp;`npm install`&nbsp;
-	* run &nbsp;`npm start`&nbsp;
-	* open http://localhost:3004/
-5. :heavy_check_mark: reactive-stack-js-rest-frontend-svelte:
-	* __IMPORTANT__: make sure rest-backend-fastify is started
-	* run &nbsp;`npm install`&nbsp;
-	* run &nbsp;`npm dev`&nbsp;
-	* open http://localhost:3005/
-6. :heavy_check_mark: reactive-stack-js-rest-frontend-vue:
-	* __IMPORTANT__: make sure rest-backend-fastify is started
-	* run &nbsp;`npm install`&nbsp;
-	* run &nbsp;`npm start`&nbsp;
-	* open http://localhost:3006/
-7. :heavy_check_mark: :construction: reactive-stack-js-graphql-backend-fastify:
-	* run &nbsp;`npm install`&nbsp;
-	* run &nbsp;`npm start`&nbsp;
-	* open http://localhost:3007/
-8. :heavy_check_mark: :construction: reactive-stack-js-graphql-frontend-vue:
-	* __IMPORTANT__: make sure graphql-backend-fastify is started
-	* run &nbsp;`npm install`&nbsp;
-	* run &nbsp;`npm start`&nbsp;
-	* open http://localhost:3008/
+### Sections & Repositories
 
-### Reactive Stack POC Description
+1.  **Reactive Stack JS using** [**MeteorJS**](https://www.meteor.com/)
+    1.  Meteor with React
+        1.  :heavy\_check\_mark: :construction: [reactive-stack-js-meteor-react](https://github.com/reactive-stack-js/reactive-stack-js-meteor-react)  
+            _based on_ [_Meteor React tutorial_](https://www.meteor.com/tutorials/react/creating-an-app)
+    2.  Meteor with Svelte
+        1.  :x: :construction: [reactive-stack-js-meteor-svelte](https://github.com/reactive-stack-js/reactive-stack-js-meteor-svelte)  
+            _based on_ [_Meteor Svelte tutorial_](https://www.meteor.com/tutorials/svelte/creating-an-app)  
+             
+2.  **Reactive Stack JS using** [**REST**](https://restfulapi.net/)
+    1.  :construction: [reactive-stack-js-rest-backend-fastify](https://github.com/reactive-stack-js/reactive-stack-js-rest-backend-fastify)
+    2.  :construction: [reactive-stack-js-rest-frontend-react](https://github.com/reactive-stack-js/reactive-stack-js-rest-frontend-react)
+    3.  :construction: [reactive-stack-js-rest-frontend-svelte](https://github.com/reactive-stack-js/reactive-stack-js-rest-frontend-svelte)
+    4.  :construction: [reactive-stack-js-rest-frontend-vue](https://github.com/reactive-stack-js/reactive-stack-js-rest-frontend-vue)  
+         
+3.  **Reactive Stack JS using** [**GraphQL**](https://graphql.org/)
+    1.  :heavy\_check\_mark: [reactive-stack-js-graphql-backend-fastify](https://github.com/reactive-stack-js/reactive-stack-js-graphql-backend-fastify)
+    2.  :heavy\_check\_mark: [reactive-stack-js-graphql-frontend-vue](https://github.com/reactive-stack-js/reactive-stack-js-graphql-frontend-vue)
 
-1. Facebook or Google login (_or both…_)<br/>
-_With JWT tokens._<br/>&nbsp;
-2. Collection lorems<br/>
-_Use [casual](https://www.npmjs.com/package/casual) to generate random data._<br/>
-_(run &nbsp;`npm run data`&nbsp; in the root folder)_
-<br/>&nbsp;
-	1. __id__			ObjectID  	(_not editable_)
-	2. __itemId__		string		(_not editable, create with [uuidv4](https://github.com/uuidjs/uuid), ties iterations together_)
-	3. __iteration__	int			(_not editable, autoincrement_)
-	4. __isLatest__		boolean		(_only latest iteration has true_)
-	5. __isDraft__		boolean		(_only one per itemId, no iteration until submited_)
-	6. __rating__		int
-	7. __firstname__	string
-	7. __lastname__		string
-	8. __description__	multiline
-	9. __createdAt__	date		 (_not editable_)
-	10. __species__		enum
-		1. _Human_
-		2. _Draenei_
-		3. _Dryad_
-		4. _Dwarf_
-		5. _Gnome_
-		6. _Worgde_
-3. Create ~1000 instances<br/>
-_Reset data every hour for any deployed demo_<br/>&nbsp;
-4. Create a listing page, to show a page of lorems data
-	1. Grid and preview sections
-	2. In grid, only show isLatest=true rows, since this is the active iteration
-	3. Create filters for all fields	(_multi filter with AND_)
-	4. Allow sorting on all fields		(_multi-sort optional_)
-	5. Allow page navigation			(_10 items per page_)
-	6. Selected row actions:
-		1. View							(_default when selected - shows item in preview_)
-		2. Edit							(_opens editor page, creates draft - fully collaborative_)
-		3. History						(_shows a grid with all iterations in preview, sorted by iteration desc_)
-		4. Delete
-	7. Allow user to chose:
-		1. Update rows in real-time
-		2. Update rows in user defined interval (_in minutes_)
-		3. Notify user that data has changed, but they manually update<br/>&nbsp;
-5. Create the editor page for an item, fully collaborative
-	1. On Edit in listing, if draft exists for that item, handle it
-		1. If draft is currently being edited, send the user there
-		2. Otherwise allow the user to throw that draft away and start a new one
-	2. Save button saves the draft
-	3. Save and close saves the draft and goes back to listing
-	4. Submit saves the draft as a new iteration with isDraft=false
+**IMPORTANT: Due to sheer amount of code, I am currently only focused on my preferred solution under point 3!**
 
-## TODO
+However, I will do my best to finalize all repositories and bring them to the same level of equal functionality.
 
-fastest-validator
+### Execution
+
+Both Meteor repositories are standalone and can be started on their own.
+
+In section 2, the backend has to be running for any of the 3 frontend repositories to work. Those, however, can be started independent of each other.
+
+Section 3 is similar to section 2, however there is only one frontend solution available.  
+_I do not plan to repeat react or svelte here, since that would serve no valuable purpose._
+
+### Requirements
+
+*   Meteor ([_install_](https://www.meteor.com/install))
+*   MongoDB ([_install_](https://docs.mongodb.com/manual/installation/#mongodb-community-edition-installation-tutorials))
+    *   **IMPORTANT**: as a cluster (_see_ [_MongoDB: Convert a Standalone to a Replica Set_](https://docs.mongodb.com/manual/tutorial/convert-standalone-to-replica-set/))
+    *   with featureCompatibilityVersion = "3.6" (_see_ [_setFeatureCompatibilityVersion_](https://docs.mongodb.com/manual/reference/command/setFeatureCompatibilityVersion/))
+*   [Yarn](https://yarnpkg.com/) (_preferred over npm_)
+
+### App Description
+
+WIP: [App Description](https://github.com/reactive-stack-js/reactive-stack-js/wiki/App-Description)
