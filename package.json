@@ -1,0 +1,17 @@
+{
+	"name": "reactive-stack-js",
+	"version": "0.1.0",
+	"description": "reactive stack js",
+	"author": "Predrag Stojadinovic <predrag@stojadinovic.net>",
+	"scripts": {
+		"data": "node create-lorems.js",
+		"last": "yarn upgrade-interactive --latest",
+		"up": "yarn upgrade-interactive"
+	},
+	"dependencies": {
+		"casual": "^1.6.2",
+		"lodash": "^4.17.15",
+		"mongoose": "^5.9.22",
+		"uuid": "^8.2.0"
+	}
+}
