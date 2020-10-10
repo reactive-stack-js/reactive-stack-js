@@ -65,7 +65,25 @@ WIP: [App Description](https://github.com/reactive-stack-js/reactive-stack-js/wi
 
 # Reactive Stack JS using MeteorJS
 
-First make sure you have all the [requirements](https://github.com/reactive-stack-js/reactive-stack-js/blob/main/README.md#requirements).
+First make sure you have taken care of all the [requirements](https://github.com/reactive-stack-js/reactive-stack-js/blob/main/README.md#requirements).
+
+### Configure Login
+
+When you first start either react or svelte meteor applications, you need to configure the login.
+
+Click **Sign in**:
+
+![alt text](https://raw.githubusercontent.com/reactive-stack-js/reactive-stack-js/main/images/meteor/meteor01.png)
+
+Configure the logins by adding respective app ids and secrets:
+
+![alt text](https://raw.githubusercontent.com/reactive-stack-js/reactive-stack-js/main/images/meteor/meteor02.png)
+
+In the end, you will see the `meteor_accounts_loginServiceConfiguration` collection and in it your configuration:
+
+![alt text](https://raw.githubusercontent.com/reactive-stack-js/reactive-stack-js/main/images/meteor/meteor03.png)
+
+to continue...
 
 # Reactive Stack JS using REST
 
