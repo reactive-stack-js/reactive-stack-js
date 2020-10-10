@@ -13,7 +13,7 @@ Basically, this boils down to a simple description: the client is **observing** 
 ## Description
 
 This repository contains data creating script which uses [casual](https://github.com/boo1ean/casual).  
-Just first do `yarn`, then do `yarn data`, and your mongodb will 
+Just first do `yarn`, then do `yarn data`, and your mongodb will have a new database called `reactivestackjs`, populated with fake data.
 
 It also contains the description and links to various sub-repositories I created as a reactive stack [POC](https://en.wikipedia.org/wiki/Proof_of_concept).
 
