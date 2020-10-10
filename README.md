@@ -12,7 +12,9 @@ Basically, this boils down to a simple description: the client is **observing** 
 
 ## Description
 
-This repository contains the description and links to various sub-repositories I created as a reactive stack [POC](https://en.wikipedia.org/wiki/Proof_of_concept).
+This repository contains data creating script which uses [casual](https://github.com/boo1ean/casual). Just first `yarn`, and then `yarn data`.
+
+It also contains the description and links to various sub-repositories I created as a reactive stack [POC](https://en.wikipedia.org/wiki/Proof_of_concept).
 
 There are 3 sections which are further split into repositories.
 
