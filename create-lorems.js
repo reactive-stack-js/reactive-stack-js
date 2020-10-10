@@ -1,9 +1,8 @@
-const fs = require('fs');
 const _ = require('lodash');
 const casual = require('casual');
 const mongoose = require('mongoose');
-const {v4: uuidv4} = require('uuid');
 
+const {v4: uuidv4} = require('uuid');
 const Lorem = require("./models/lorem");
 const Ipsum = require("./models/ipsum");
 const Dolor = require("./models/dolor");
@@ -84,7 +83,7 @@ const _createConsectetur = (dolorId1, dolorId2) => new Consectetur({
 });
 
 mongoose
-	.connect('mongodb://localhost:27017/lorems', {
+	.connect('mongodb://localhost:27017/reactivestackjs', {
 		poolSize: 10,
 		useNewUrlParser: true,
 		useUnifiedTopology: true,
