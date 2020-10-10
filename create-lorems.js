@@ -14,7 +14,9 @@ let EMAILS = [];
 
 const createEmail = () => {
 	let email = _.toLower(casual.email);
-	while (_.includes(EMAILS, email)) email = _.toLower(casual.email);
+	while (_.includes(EMAILS, email)) {
+		email = _.toLower(casual.email);
+	}
 	EMAILS.push(email);
 	return email;
 };
@@ -99,7 +101,9 @@ mongoose
 		for (let lorem of lorems) {
 			lorem = new Lorem(lorem);
 			lorem = await lorem.save();
-			if (_.size(loremIds) < 2) loremIds.push(lorem._id);
+			if (_.size(loremIds) < 2) {
+				loremIds.push(lorem._id);
+			}
 		}
 		const count = await Lorem.find();
 		console.log("inserted", _.size(count), "rows into lorems");
