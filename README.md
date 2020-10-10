@@ -10,6 +10,12 @@ What that means is that instead of the client _requesting_ the data from the ser
 
 Basically, this boils down to a simple description: the client is **observing** the data, and **reacting** to its changes.
 
+For more information, please check out:
+
+*   [Reactive Design Patterns](https://www.manning.com/books/reactive-design-patterns)
+*   [ReactiveX](http://reactivex.io/)
+*   [Learn RxJS](https://www.learnrxjs.io/)
+
 ### Description
 
 This repository contains data creating script which uses [casual](https://github.com/boo1ean/casual).  
