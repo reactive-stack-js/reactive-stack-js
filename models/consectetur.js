@@ -1,10 +1,8 @@
 #!/usr/bin/env node
-'use strict';
+"use strict";
 
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 const {model, Schema} = mongoose;
-
-const Dolor = require("./dolor");
 
 const ConsecteturSchema = new Schema(
 	{
@@ -13,7 +11,7 @@ const ConsecteturSchema = new Schema(
 		voluptatem: {type: Object},
 		dolorIds: {
 			type: [Schema.Types.ObjectId],
-			ref: 'Dolor'
+			ref: "Dolor"
 		}
 	},
 	{
@@ -21,4 +19,4 @@ const ConsecteturSchema = new Schema(
 		versionKey: false,
 	},
 );
-module.exports = model('Consectetur', ConsecteturSchema, 'consecteturs');
+module.exports = model("Consectetur", ConsecteturSchema, "consecteturs");
