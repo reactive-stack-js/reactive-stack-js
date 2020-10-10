@@ -2,7 +2,7 @@
 
 # Reactive Stack JS
 
-[![codacy](https://img.shields.io/codacy/grade/e0146e29a3134038b4dcf95db9eb5a38.svg)](https://app.codacy.com/gh/reactive-stack-js/reactive-stack-js/issues)
+![codacy](https://img.shields.io/codacy/grade/e0146e29a3134038b4dcf95db9eb5a38.svg)
 
 In **reactive** programming, data is pushed, not pulled. Therefore, a reactive stack is, logically, one where data is pushed, not pulled.
 
@@ -10,7 +10,7 @@ What that means is that instead of the client _requesting_ the data from the ser
 
 Basically, this boils down to a simple description: the client is **observing** the data, and **reacting** to its changes.
 
-## Description
+### Description
 
 This repository contains data creating script which uses [casual](https://github.com/boo1ean/casual).  
 Just first do `yarn`, then do `yarn data`, and your mongodb will have a new database called `reactivestackjs`, populated with fake data.
@@ -19,7 +19,7 @@ It also contains the description and links to various sub-repositories I created
 
 There are 3 sections which are further split into repositories.
 
-### Sections & Repositories
+#### Sections & Repositories
 
 1.  **Reactive Stack JS using** [**MeteorJS**](https://www.meteor.com/)
     1.  Meteor with React
@@ -41,7 +41,7 @@ There are 3 sections which are further split into repositories.
 
 However, I will do my best to finalize all repositories and bring them to the same level of equal functionality.
 
-### Execution
+#### Execution
 
 Both Meteor repositories are standalone and can be started on their own.
 
@@ -50,7 +50,7 @@ In section 2, the backend has to be running for any of the 3 frontend repositori
 Section 3 is similar to section 2, however there is only one frontend solution available.  
 _I do not plan to repeat react or svelte here, since that would serve no valuable purpose._
 
-### Requirements
+#### Requirements
 
 *   Meteor ([_install_](https://www.meteor.com/install))
 *   MongoDB ([_install_](https://docs.mongodb.com/manual/installation/#mongodb-community-edition-installation-tutorials))
@@ -59,11 +59,11 @@ _I do not plan to repeat react or svelte here, since that would serve no valuabl
 *   [Yarn](https://yarnpkg.com/) (_preferred over npm_)
 *   System variable `MONGO_URL=mongodb://localhost:27017/reactivestackjs`
 
-### App Description
+#### App Description
 
 WIP: [App Description](https://github.com/reactive-stack-js/reactive-stack-js/wiki/App-Description)
 
-# Reactive Stack JS using MeteorJS
+## Reactive Stack JS using MeteorJS
 
 First make sure you have taken care of all the [requirements](https://github.com/reactive-stack-js/reactive-stack-js/blob/main/README.md#requirements).
 
@@ -85,10 +85,10 @@ In the end, you will see the `meteor_accounts_loginServiceConfiguration` collect
 
 to continue...
 
-# Reactive Stack JS using REST
+## Reactive Stack JS using REST
 
 todo...
 
-# Reactive Stack JS using GraphQL
+## Reactive Stack JS using GraphQL
 
 todo...
