@@ -57,6 +57,7 @@ _I do not plan to repeat react or svelte here, since that would serve no valuabl
     *   **IMPORTANT**: as a cluster (_see_ [_MongoDB: Convert a Standalone to a Replica Set_](https://docs.mongodb.com/manual/tutorial/convert-standalone-to-replica-set/))
     *   with featureCompatibilityVersion = "3.6" (_see_ [_setFeatureCompatibilityVersion_](https://docs.mongodb.com/manual/reference/command/setFeatureCompatibilityVersion/))
 *   [Yarn](https://yarnpkg.com/) (_preferred over npm_)
+*   System variable `MONGO_URL=mongodb://localhost:27017/reactivestackjs`
 
 ### App Description
 
@@ -64,7 +65,7 @@ WIP: [App Description](https://github.com/reactive-stack-js/reactive-stack-js/wi
 
 # Reactive Stack JS using MeteorJS
 
-todo...
+First make sure you have all the [requirements](https://github.com/reactive-stack-js/reactive-stack-js/blob/main/README.md#requirements).
 
 # Reactive Stack JS using REST
 
