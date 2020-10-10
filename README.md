@@ -2,7 +2,7 @@
 
 # Reactive Stack JS
 
-![codacy](https://img.shields.io/codacy/grade/e0146e29a3134038b4dcf95db9eb5a38.svg)
+[![codacy](https://img.shields.io/codacy/grade/e0146e29a3134038b4dcf95db9eb5a38.svg)](https://app.codacy.com/gh/reactive-stack-js/reactive-stack-js/issues)
 
 In **reactive** programming, data is pushed, not pulled. Therefore, a reactive stack is, logically, one where data is pushed, not pulled.
 
