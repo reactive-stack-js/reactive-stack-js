@@ -29,10 +29,10 @@ There are 3 sections which are further split into repositories.
 
 1.  **Reactive Stack JS using** [**MeteorJS**](https://www.meteor.com/)
     1.  Meteor with React
-        1.  :heavy\_check\_mark: :construction: [reactive-stack-js-meteor-react](https://github.com/reactive-stack-js/reactive-stack-js-meteor-react)  
+        1.  :heavy\_check\_mark: [reactive-stack-js-meteor-react](https://github.com/reactive-stack-js/reactive-stack-js-meteor-react)  
             _based on_ [_Meteor React tutorial_](https://www.meteor.com/tutorials/react/creating-an-app)
     2.  Meteor with Svelte
-        1.  :x: :construction: [reactive-stack-js-meteor-svelte](https://github.com/reactive-stack-js/reactive-stack-js-meteor-svelte)  
+        1.  :x: [reactive-stack-js-meteor-svelte](https://github.com/reactive-stack-js/reactive-stack-js-meteor-svelte)  
             _based on_ [_Meteor Svelte tutorial_](https://www.meteor.com/tutorials/svelte/creating-an-app)
 2.  **Reactive Stack JS using** [**REST**](https://restfulapi.net/)
     1.  :construction: [reactive-stack-js-rest-backend-fastify](https://github.com/reactive-stack-js/reactive-stack-js-rest-backend-fastify)
@@ -93,8 +93,8 @@ to continue...
 
 ## Reactive Stack JS using REST
 
-todo...
+Simply `yarn` in each repository, then `yarn start` in the backend and then the same in any frontends you wish to look at. The frontends can run in parallel.
 
 ## Reactive Stack JS using GraphQL
 
-todo...
+Simply `yarn` in each repository, then `yarn start` in the backend and then the same in the frontend.
