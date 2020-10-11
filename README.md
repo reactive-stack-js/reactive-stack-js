@@ -29,18 +29,18 @@ There are 3 sections which are further split into repositories.
 
 1.  **Reactive Stack JS using** [**MeteorJS**](https://www.meteor.com/)
     1.  Meteor with React
-        1.  :heavy_check_mark: [reactive-stack-js-meteor-react](https://github.com/reactive-stack-js/reactive-stack-js-meteor-react)  
-            _based on [Meteor React tutorial](https://www.meteor.com/tutorials/react/creating-an-app)_
+        1.  :heavy\_check\_mark: [reactive-stack-js-meteor-react](https://github.com/reactive-stack-js/reactive-stack-js-meteor-react)  
+            _based on_ [_Meteor React tutorial_](https://www.meteor.com/tutorials/react/creating-an-app)
     2.  Meteor with Svelte
-        1.  :heavy_check_mark: [reactive-stack-js-meteor-svelte](https://github.com/reactive-stack-js/reactive-stack-js-meteor-svelte)  
-            _based on [Meteor Svelte tutorial](https://www.meteor.com/tutorials/svelte/creating-an-app)_
+        1.  :heavy\_check\_mark: [reactive-stack-js-meteor-svelte](https://github.com/reactive-stack-js/reactive-stack-js-meteor-svelte)  
+            _based on_ [_Meteor Svelte tutorial_](https://www.meteor.com/tutorials/svelte/creating-an-app)
 2.  **Reactive Stack JS using** [**REST**](https://restfulapi.net/)
-    1.  :heavy\_check\_mark: [reactive-stack-js-rest-backend-fastify](https://github.com/reactive-stack-js/reactive-stack-js-rest-backend-fastify)  
-    2.  :construction: [reactive-stack-js-rest-frontend-react](https://github.com/reactive-stack-js/reactive-stack-js-rest-frontend-react)  
-    3.  :heavy\_check\_mark: [reactive-stack-js-rest-frontend-vue](https://github.com/reactive-stack-js/reactive-stack-js-rest-frontend-vue)  
+    1.  :heavy\_check\_mark: [reactive-stack-js-rest-backend-fastify](https://github.com/reactive-stack-js/reactive-stack-js-rest-backend-fastify)
+    2.  :heavy\_check\_mark: [reactive-stack-js-rest-frontend-react](https://github.com/reactive-stack-js/reactive-stack-js-rest-frontend-react)
+    3.  :heavy\_check\_mark: [reactive-stack-js-rest-frontend-vue](https://github.com/reactive-stack-js/reactive-stack-js-rest-frontend-vue)
 3.  **Reactive Stack JS using** [**GraphQL**](https://graphql.org/)
-    1.  :heavy\_check\_mark: [reactive-stack-js-graphql-backend-fastify](https://github.com/reactive-stack-js/reactive-stack-js-graphql-backend-fastify)  
-    2.  :heavy\_check\_mark: [reactive-stack-js-graphql-frontend-vue](https://github.com/reactive-stack-js/reactive-stack-js-graphql-frontend-vue)  
+    1.  :heavy\_check\_mark: [reactive-stack-js-graphql-backend-fastify](https://github.com/reactive-stack-js/reactive-stack-js-graphql-backend-fastify)
+    2.  :heavy\_check\_mark: [reactive-stack-js-graphql-frontend-vue](https://github.com/reactive-stack-js/reactive-stack-js-graphql-frontend-vue)
 
 **IMPORTANT: Due to sheer amount of code, I am currently only focused on my preferred solution under point 3!**
 
