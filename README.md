@@ -28,20 +28,20 @@ There are 3 sections which are further split into repositories.
 ### Sections & Repositories
 
 1.  **Reactive Stack JS using** [**MeteorJS**](https://www.meteor.com/)
-    1.  Meteor with React ![codacy](https://img.shields.io/codacy/grade/98ad0c6272944d118262961a01eb18bf.svg)
-        1.  :heavy\_check\_mark: [reactive-stack-js-meteor-react](https://github.com/reactive-stack-js/reactive-stack-js-meteor-react)  
+    1.  Meteor with React
+        1.  :heavy\_check\_mark: [reactive-stack-js-meteor-react](https://github.com/reactive-stack-js/reactive-stack-js-meteor-react) ![codacy](https://img.shields.io/codacy/grade/98ad0c6272944d118262961a01eb18bf.svg)
             _based on_ [_Meteor React tutorial_](https://www.meteor.com/tutorials/react/creating-an-app)
-    2.  Meteor with Svelte ![codacy](https://img.shields.io/codacy/grade/4f1e2a2773f0487d8c76383194188c7d.svg)
-        1.  :heavy\_check\_mark: [reactive-stack-js-meteor-svelte](https://github.com/reactive-stack-js/reactive-stack-js-meteor-svelte)  
+    2.  Meteor with Svelte
+        1.  :heavy\_check\_mark: [reactive-stack-js-meteor-svelte](https://github.com/reactive-stack-js/reactive-stack-js-meteor-svelte) ![codacy](https://img.shields.io/codacy/grade/4f1e2a2773f0487d8c76383194188c7d.svg)
             _based on_ [_Meteor Svelte tutorial_](https://www.meteor.com/tutorials/svelte/creating-an-app)
 2.  **Reactive Stack JS using** [**REST**](https://restfulapi.net/)
-    1.  :heavy\_check\_mark: [reactive-stack-js-rest-backend-fastify](https://github.com/reactive-stack-js/reactive-stack-js-rest-backend-fastify)  ![codacy](https://img.shields.io/codacy/grade/f642d79675444ada87a00c7ed30be7c8.svg)
-    2.  :construction: [reactive-stack-js-rest-frontend-react](https://github.com/reactive-stack-js/reactive-stack-js-rest-frontend-react)  ![codacy](https://img.shields.io/codacy/grade/9a399288413f4e4d99397fc60e2c996e.svg)
-    3.  :x: :construction: [reactive-stack-js-rest-frontend-svelte](https://github.com/reactive-stack-js/reactive-stack-js-rest-frontend-svelte)  ![codacy](https://img.shields.io/codacy/grade/428d2903338e4383901946a72ee21de2.svg)
-    4.  :heavy\_check\_mark: [reactive-stack-js-rest-frontend-vue](https://github.com/reactive-stack-js/reactive-stack-js-rest-frontend-vue)  ![codacy](https://img.shields.io/codacy/grade/ea870a2512e44b10b508449a5ddd9e71.svg)
+    1.  :heavy\_check\_mark: [reactive-stack-js-rest-backend-fastify](https://github.com/reactive-stack-js/reactive-stack-js-rest-backend-fastify) ![codacy](https://img.shields.io/codacy/grade/f642d79675444ada87a00c7ed30be7c8.svg)
+    2.  :construction: [reactive-stack-js-rest-frontend-react](https://github.com/reactive-stack-js/reactive-stack-js-rest-frontend-react) ![codacy](https://img.shields.io/codacy/grade/9a399288413f4e4d99397fc60e2c996e.svg)
+    3.  :x: :construction: [reactive-stack-js-rest-frontend-svelte](https://github.com/reactive-stack-js/reactive-stack-js-rest-frontend-svelte) ![codacy](https://img.shields.io/codacy/grade/428d2903338e4383901946a72ee21de2.svg)
+    4.  :heavy\_check\_mark: [reactive-stack-js-rest-frontend-vue](https://github.com/reactive-stack-js/reactive-stack-js-rest-frontend-vue) ![codacy](https://img.shields.io/codacy/grade/ea870a2512e44b10b508449a5ddd9e71.svg)
 3.  **Reactive Stack JS using** [**GraphQL**](https://graphql.org/)
-    1.  :heavy\_check\_mark: [reactive-stack-js-graphql-backend-fastify](https://github.com/reactive-stack-js/reactive-stack-js-graphql-backend-fastify)  ![codacy](https://img.shields.io/codacy/grade/c0a69a2288e64d56a76ce8756c1ff19f.svg)
-    2.  :heavy\_check\_mark: [reactive-stack-js-graphql-frontend-vue](https://github.com/reactive-stack-js/reactive-stack-js-graphql-frontend-vue)  ![codacy](https://img.shields.io/codacy/grade/554b0ca636f14d389a8560f2703decb4.svg)
+    1.  :heavy\_check\_mark: [reactive-stack-js-graphql-backend-fastify](https://github.com/reactive-stack-js/reactive-stack-js-graphql-backend-fastify) ![codacy](https://img.shields.io/codacy/grade/c0a69a2288e64d56a76ce8756c1ff19f.svg)
+    2.  :heavy\_check\_mark: [reactive-stack-js-graphql-frontend-vue](https://github.com/reactive-stack-js/reactive-stack-js-graphql-frontend-vue) ![codacy](https://img.shields.io/codacy/grade/554b0ca636f14d389a8560f2703decb4.svg)
 
 **IMPORTANT: Due to sheer amount of code, I am currently only focused on my preferred solution under point 3!**
 
