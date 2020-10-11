@@ -61,13 +61,13 @@ WIP: [App Description](https://github.com/reactive-stack-js/reactive-stack-js/wi
 
 ## Reactive Stack JS using MeteorJS
 
-Follow instructions in each repository to install and run.
-
+Follow instructions in each repository to install and run.  
 Both meteor implementations can run in parallel.
 
 ## Reactive Stack JS using REST
 
-Simply `yarn` in each repository, then `yarn start` in the backend and then the same in any frontends you wish to look at. The frontends can run in parallel.
+Simply `yarn` in each repository, then `yarn start` in the backend and then the same in any frontend you wish to look at.  
+The frontends can run in parallel.
 
 ## Reactive Stack JS using GraphQL
 
