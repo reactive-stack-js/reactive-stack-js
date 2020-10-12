@@ -16,7 +16,21 @@ For more information, please check out:
 *   [ReactiveX](http://reactivex.io/)
 *   [Learn RxJS](https://www.learnrxjs.io/)
 
-## Description
+## Goal
+
+My goal was to create a reactive stack solution that would not have a [vendor lock-in](https://en.wikipedia.org/wiki/Vendor_lock-in). In other words, I wanted the end product to have the flexibility where any part of it could be replaced with an alternative, in as easy as possible manner. Or, to put it even darkly, that it is even possible to replace any part with an alternative.
+
+## Clarification
+
+To clarify the below listed sections, I started with [MeteorJS](https://www.meteor.com/) because it allowed me to quickly create the client side for the setup I had in mind. It also allowed me to _see_ the final POC application it in action and thus work off of that example. Further more, I was able to reuse the client side code with minimal adjustments. Therefore, I ended up working in stages, but was able to have the fully functional POC app even after implementing only the first stage. I hope that makes sense.
+
+The second step was to take the created [React](https://reactjs.org/) client side code from the **reactive-stack-js-meteor-react** implementation and work on the alternative REST [Fastify](https://www.fastify.io/) backend for it to replace [MeteorJS](https://www.meteor.com/). Once I had the backend working, I was also able to take over the [Svelte](https://svelte.dev/) client side code from **reactive-stack-js-meteor-svelte**. This was later deleted due to the fact that Svelte started throwing errors that were totally weird, and I did not want to deal with them. These sadly also happen to me in the **reactive-stack-js-meteor-svelte** repository, but I still left it as I might go back and deal with them at some point. I then added [Vue](https://vuejs.org/) to the REST setup, for comparison with the other two.
+
+Finally, in the third step, I decided to add [GraphQL](https://graphql.org/) to the mix, and replace REST with it. My main goal there was to add GraphQL without having to also manually write the GraphQL schemas, as well as also most common mutations for every [Mongoose](https://mongoosejs.com/) model in the app. This worked.
+
+So, my favorite solution, in the end, is the section 3, which is based on [RxJS](https://rxjs.dev/), [Fastify](https://www.fastify.io/), [Mongoose](https://mongoosejs.com/), [GraphQL](https://graphql.org/) and [Vue](https://vuejs.org/).
+
+## This repository
 
 This repository contains data creating script which uses [casual](https://github.com/boo1ean/casual).  
 Just first do `yarn`, then do `yarn data`, and your [mongodb](https://www.mongodb.com/) will have a new database called `reactivestackjs`, populated with fake data.
@@ -41,10 +55,6 @@ There are 3 sections which are further split into repositories.
 3.  **Reactive Stack JS using** [**GraphQL**](https://graphql.org/)
     1.  :heavy\_check\_mark: [reactive-stack-js-graphql-backend-fastify](https://github.com/reactive-stack-js/reactive-stack-js-graphql-backend-fastify)
     2.  :heavy\_check\_mark: [reactive-stack-js-graphql-frontend-vue](https://github.com/reactive-stack-js/reactive-stack-js-graphql-frontend-vue)
-
-**IMPORTANT: Due to sheer amount of code, I am currently only focused on my preferred solution under point 3!**
-
-However, I will do my best to finalize all repositories and bring them to the same level of equal functionality.
 
 ### Execution
 
