@@ -28,7 +28,7 @@ The second step was to take the created [React](https://reactjs.org/) client sid
 
 Finally, in the third step, I decided to add [GraphQL](https://graphql.org/) to the mix, and replace REST with it. My main goal there was to add GraphQL without having to also manually write the GraphQL schemas, as well as also most common mutations for every [Mongoose](https://mongoosejs.com/) model in the app. This worked.
 
-So, my favorite solution, in the end, is the section 3, which is based on [RxJS](https://rxjs.dev/), [Fastify](https://www.fastify.io/), [Mongoose](https://mongoosejs.com/), [GraphQL](https://graphql.org/) and [Vue](https://vuejs.org/).
+So, my favorite solution, in the end, is the section 3, which is based on [RxJS](https://rxjs.dev/), [Fastify](https://www.fastify.io/), [Mongoose](https://mongoosejs.com/), [GraphQL](https://graphql.org/) and [Vue](https://vuejs.org/). Therefore, this is the one that will be the focus for me, in terms of documentation and refactoring.
 
 ## This repository
 
