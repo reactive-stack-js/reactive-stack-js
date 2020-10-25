@@ -1,8 +1,8 @@
 const _ = require("lodash");
 const casual = require("casual");
 const mongoose = require("mongoose");
-
 const {v4: uuidv4} = require("uuid");
+
 const Lorem = require("./models/lorem");
 const Ipsum = require("./models/ipsum");
 const Dolor = require("./models/dolor");
