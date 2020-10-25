@@ -1,7 +1,7 @@
 #!/usr/bin/env node
-"use strict";
+'use strict';
 
-const mongoose = require("mongoose");
+const mongoose = require('mongoose');
 const {model, Schema} = mongoose;
 
 const IpsumSchema = new Schema(
@@ -11,12 +11,12 @@ const IpsumSchema = new Schema(
 		perspiciatis: {type: Object},
 		loremId: {
 			type: Schema.Types.ObjectId,
-			ref: "Lorem"
+			ref: 'Lorem'
 		}
 	},
 	{
 		timestamps: true,
-		versionKey: false,
-	},
+		versionKey: false
+	}
 );
-module.exports = model("Ipsum", IpsumSchema, "ipsums");
+module.exports = model('Ipsum', IpsumSchema, 'ipsums');

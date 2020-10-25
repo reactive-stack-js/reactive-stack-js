@@ -1,7 +1,7 @@
 #!/usr/bin/env node
-"use strict";
+'use strict';
 
-const mongoose = require("mongoose");
+const mongoose = require('mongoose');
 const {model, Schema} = mongoose;
 
 const LoremSchema = new Schema(
@@ -21,7 +21,7 @@ const LoremSchema = new Schema(
 	},
 	{
 		timestamps: true,
-		versionKey: false,
+		versionKey: false
 	}
 );
-module.exports = model("Lorem", LoremSchema, "lorems");
+module.exports = model('Lorem', LoremSchema, 'lorems');

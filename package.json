@@ -5,6 +5,7 @@
 	"author": "Predrag Stojadinovic <predrag@stojadinovic.net>",
 	"scripts": {
 		"data": "node create-lorems.js",
+		"format": "prettier --write \"**/*.js\"",
 		"last": "yarn upgrade-interactive --latest",
 		"up": "yarn upgrade-interactive"
 	},
@@ -13,5 +14,8 @@
 		"lodash": "^4.17.15",
 		"mongoose": "^5.9.22",
 		"uuid": "^8.2.0"
+	},
+	"devDependencies": {
+		"prettier": "^2.1.2"
 	}
 }
