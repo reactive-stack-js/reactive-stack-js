@@ -17,6 +17,15 @@ For more information, please check out:
 *   [ReactiveX](http://reactivex.io/)
 *   [Learn RxJS](https://www.learnrxjs.io/)
 
+## Observer Pattern through the Chain
+
+Please read up on the Observer Patter if you are unfamiliar with it: [Observer Design Pattern](https://sourcemaking.com/design_patterns/observer).
+Also, please read up on the difference between Observer and Pub Sub, again, if you are unfamiliar with the difference: [Observer vs Pub-Sub pattern](https://hackernoon.com/observer-vs-pub-sub-pattern-50d3b27f838c).
+
+The Chain here refers to the entire data transport chain, from the source the database, all the way to the rendered UI in the GUI.
+
+...
+
 ## Goal
 
 My goal was to create a reactive stack solution that would not have a [vendor lock-in](https://en.wikipedia.org/wiki/Vendor_lock-in). In other words, I wanted the end product to have the flexibility where any part of it could be replaced with an alternative, in as easy as possible manner.
