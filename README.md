@@ -24,7 +24,17 @@ Also, please read up on the difference between Observer and Pub Sub, again, if y
 
 The Chain here refers to the entire data transport chain, from the source the database, all the way to the rendered UI in the GUI.
 
-...
+This is the list of Observer Pattern pair instances in the chain, from DB to GUI:
+Note A <- X means that X observes A. A is the observable and X is the observer.
+
+1. Collection/Table <- ObservableModel
+2. ObservableModel <- ReactiveStore
+3. ReactiveStore <- Client
+4. Client <-WebSocket-> ClientSocket
+5. ClientSocket <- ReactiveStore
+6. ReactiveStore <- Dialog
+
+_...todo: describe each listed instance above_
 
 ## Goal
 
