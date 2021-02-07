@@ -17,6 +17,26 @@ For more information, please check out:
 *   [ReactiveX](http://reactivex.io/)
 *   [Learn RxJS](https://www.learnrxjs.io/)
 
+## Observer Pattern through the Chain
+
+Please read up on the Observer Patter if you are unfamiliar with it: [Observer Design Pattern](https://sourcemaking.com/design_patterns/observer).<br/>
+Also, please read up on the difference between Observer and Pub Sub: [Observer vs Pub-Sub pattern](https://hackernoon.com/observer-vs-pub-sub-pattern-50d3b27f838c).
+
+The Chain here refers to the entire data transport chain, from the source the database, all the way to the rendered UI in the GUI.
+
+This is the list of Observer Pattern pair instances in the chain, from DB to GUI.<br/>
+__Note__: A <- X means that X _observes_ A. A is then the _observable_ and X is the _observer_.<br/>
+__Note__: <-WS- indicates that the Observer Pattern goes through a WebSocket connection.
+
+1. Collection/Table <- ObservableModel
+2. ObservableModel <- ReactiveStore
+3. ReactiveStore <- Client
+4. Client <-WS- ClientSocket
+5. ClientSocket <- ReactiveStore
+6. ReactiveStore <- Dialog
+
+_...todo: describe each listed instance above_
+
 ## Goal
 
 My goal was to create a reactive stack solution that would not have a [vendor lock-in](https://en.wikipedia.org/wiki/Vendor_lock-in). In other words, I wanted the end product to have the flexibility where any part of it could be replaced with an alternative, in as easy as possible manner.
