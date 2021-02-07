@@ -92,7 +92,7 @@ const _createConsectetur = (dolorId1, dolorId2) =>
 	});
 
 mongoose
-	.connect('mongodb://localhost:27017/reactivestackjs', {
+	.connect('mongodb://localhost:27017/reactivestack', {
 		poolSize: 10,
 		useNewUrlParser: true,
 		useUnifiedTopology: true
