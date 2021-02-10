@@ -13,9 +13,9 @@ Basically, this boils down to a simple description: the client is **observing** 
 
 For more information, please check out:
 
-*   [Reactive Design Patterns](https://www.manning.com/books/reactive-design-patterns)
-*   [ReactiveX](http://reactivex.io/)
-*   [Learn RxJS](https://www.learnrxjs.io/)
+* [Reactive Design Patterns](https://www.manning.com/books/reactive-design-patterns)
+* [ReactiveX](http://reactivex.io/)
+* [Learn RxJS](https://www.learnrxjs.io/)
 
 ## Observer Pattern through the Chain
 
@@ -39,21 +39,30 @@ _...todo: describe each listed instance above_
 
 ## Goal
 
-My goal was to create a reactive stack solution that would not have a [vendor lock-in](https://en.wikipedia.org/wiki/Vendor_lock-in). In other words, I wanted the end product to have the flexibility where any part of it could be replaced with an alternative, in as easy as possible manner.
+My goal was to create a reactive stack solution that would not have a [vendor lock-in](https://en.wikipedia.org/wiki/Vendor_lock-in). In other words, I wanted the end product to
+have the flexibility where any part of it could be replaced with an alternative, in as easy as possible manner.
 
-This is the end result:  
+This is the end result:
 
 ![reactive-stack-js](https://raw.githubusercontent.com/reactive-stack-js/reactive-stack-js/main/images/reactive-stack-js.png)
 
 ## Clarification
 
-I started with [MeteorJS](https://www.meteor.com/) because it allowed me to focus only on the client side for the setup I had in mind. It also allowed me to _see_ the final POC application working. I was then able to work with that example as a guide. Further more, I was able to reuse the client side code with minimal adjustments.
+I started with [MeteorJS](https://www.meteor.com/) because it allowed me to focus only on the client side for the setup I had in mind. It also allowed me to _see_ the final POC
+application working. I was then able to work with that example as a guide. Further more, I was able to reuse the client side code with minimal adjustments.
 
-The second step was to take the created [React](https://reactjs.org/) client side code from the **reactive-stack-js-meteor-react** implementation and work on the alternative REST [Fastify](https://www.fastify.io/) backend. Once I had the backend working, I was also able to take over the [Svelte](https://svelte.dev/) client side code from **reactive-stack-js-meteor-svelte**. This was later deleted due to the fact that Svelte started throwing errors that were totally weird, and I simply did not want to deal with them anymore. These sadly started to occur in **reactive-stack-js-meteor-svelte** repository as well. I also added [Vue](https://vuejs.org/) to the REST setup, for comparison.
+The second step was to take the created [React](https://reactjs.org/) client side code from the **reactive-stack-js-meteor-react** implementation and work on the alternative
+REST [Fastify](https://www.fastify.io/) backend. Once I had the backend working, I was also able to take over the [Svelte](https://svelte.dev/) client side code from **
+reactive-stack-js-meteor-svelte**. This was later deleted due to the fact that Svelte started throwing errors that were totally weird, and I simply did not want to deal with them
+anymore. These sadly started to occur in **reactive-stack-js-meteor-svelte** repository as well. I also added [Vue](https://vuejs.org/) to the REST setup, for comparison.
 
-Finally, in the third step, I decided to add [GraphQL](https://graphql.org/) to the mix, and replace REST. My main goal there was to add GraphQL without having to also manually write the GraphQL schemas, as well as also most common mutations for every [Mongoose](https://mongoosejs.com/) model in the app. This worked as I hoped it would. The final goal for the GraphQL setup is to add [live queries](https://www.graphile.org/postgraphile/live-queries/), and then remove the whole data synchronization setup I created.
+Finally, in the third step, I decided to add [GraphQL](https://graphql.org/) to the mix, and replace REST. My main goal there was to add GraphQL without having to also manually
+write the GraphQL schemas, as well as also most common mutations for every [Mongoose](https://mongoosejs.com/) model in the app. This worked as I hoped it would. The final goal for
+the GraphQL setup is to add [live queries](https://www.graphile.org/postgraphile/live-queries/), and then remove the whole data synchronization setup I created.
 
-ATM, my favorite solution is the section 2, **REST** with **Vue**, which is based on [RxJS](https://rxjs.dev/), [Fastify](https://www.fastify.io/), [Mongoose](https://mongoosejs.com/) and [Vue](https://vuejs.org/). Therefore, this is the one that will be the focus for me, in terms of documentation and refactoring. Once the **GraphQL live queries** become feasible, I will add it to section 3 and then compare with the REST implementation for a final decision.
+ATM, my favorite solution is the section 2, **REST** with **Vue**, which is based on [RxJS](https://rxjs.dev/), [Fastify](https://www.fastify.io/)
+, [Mongoose](https://mongoosejs.com/) and [Vue](https://vuejs.org/). Therefore, this is the one that will be the focus for me, in terms of documentation and refactoring. Once
+the **GraphQL live queries** become feasible, I will add it to section 3 and then compare with the REST implementation for a final decision.
 
 ## This repository
 
@@ -66,20 +75,20 @@ There are 3 sections which are further split into repositories.
 
 ### Sections & Repositories
 
-1.  **Reactive Stack JS using** [**MeteorJS**](https://www.meteor.com/)
-    1.  Meteor with React
-        1.  :heavy\_check\_mark: [reactive-stack-js-meteor-react](https://github.com/reactive-stack-js/reactive-stack-js-meteor-react)  
-            _based on_ [_Meteor React tutorial_](https://www.meteor.com/tutorials/react/creating-an-app)
-    2.  Meteor with Svelte
-        1.  :heavy\_check\_mark: [reactive-stack-js-meteor-svelte](https://github.com/reactive-stack-js/reactive-stack-js-meteor-svelte)  
-            _based on_ [_Meteor Svelte tutorial_](https://www.meteor.com/tutorials/svelte/creating-an-app)
-2.  **Reactive Stack JS using** [**REST**](https://restfulapi.net/)
-    1.  :heavy\_check\_mark: [reactive-stack-js-rest-backend-fastify](https://github.com/reactive-stack-js/reactive-stack-js-rest-backend-fastify)
-    2.  :heavy\_check\_mark: [reactive-stack-js-rest-frontend-react](https://github.com/reactive-stack-js/reactive-stack-js-rest-frontend-react)
-    3.  :heavy\_check\_mark: [reactive-stack-js-rest-frontend-vue](https://github.com/reactive-stack-js/reactive-stack-js-rest-frontend-vue)
-3.  **Reactive Stack JS using** [**GraphQL**](https://graphql.org/)
-    1.  :heavy\_check\_mark: [reactive-stack-js-graphql-backend-fastify](https://github.com/reactive-stack-js/reactive-stack-js-graphql-backend-fastify)
-    2.  :heavy\_check\_mark: [reactive-stack-js-graphql-frontend-vue](https://github.com/reactive-stack-js/reactive-stack-js-graphql-frontend-vue)
+1. **Reactive Stack JS using** [**MeteorJS**](https://www.meteor.com/)
+    1. Meteor with React
+        1. :heavy\_check\_mark: [reactive-stack-js-meteor-react](https://github.com/reactive-stack-js/reactive-stack-js-meteor-react)  
+           _based on_ [_Meteor React tutorial_](https://www.meteor.com/tutorials/react/creating-an-app)
+    2. Meteor with Svelte
+        1. :heavy\_check\_mark: [reactive-stack-js-meteor-svelte](https://github.com/reactive-stack-js/reactive-stack-js-meteor-svelte)  
+           _based on_ [_Meteor Svelte tutorial_](https://www.meteor.com/tutorials/svelte/creating-an-app)
+2. **Reactive Stack JS using** [**REST**](https://restfulapi.net/)
+    1. :heavy\_check\_mark: [reactive-stack-js-rest-backend-fastify](https://github.com/reactive-stack-js/reactive-stack-js-rest-backend-fastify)
+    2. :heavy\_check\_mark: [reactive-stack-js-rest-frontend-react](https://github.com/reactive-stack-js/reactive-stack-js-rest-frontend-react)
+    3. :heavy\_check\_mark: [reactive-stack-js-rest-frontend-vue](https://github.com/reactive-stack-js/reactive-stack-js-rest-frontend-vue)
+3. **Reactive Stack JS using** [**GraphQL**](https://graphql.org/)
+    1. :heavy\_check\_mark: [reactive-stack-js-graphql-backend-fastify](https://github.com/reactive-stack-js/reactive-stack-js-graphql-backend-fastify)
+    2. :heavy\_check\_mark: [reactive-stack-js-graphql-frontend-vue](https://github.com/reactive-stack-js/reactive-stack-js-graphql-frontend-vue)
 
 ### Execution
 
